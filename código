@@ -10,28 +10,28 @@ programa {
       escreva("De o seu palpite: ")
       leia(palpite)
       se(palpite>=1 e palpite<=50){
-       
+       contador++
 
-        se(palpite<numsorteado){
+        se(palpite<numsorteado e i!=5){
           escreva("Tente um palpite maior \n")
           
         
           
         }
-        se(palpite>numsorteado){
+        se(palpite>numsorteado e i!=5){
           escreva("Tente um palpite menor \n")
           
         
           
         }
         se(palpite==numsorteado){
-          escreva("Parabéns você advinhou o numero!\n") contador++ pare
+          escreva("Parabéns você advinhou o numero!\n") pare
         }
         
       }
       senao se(palpite<1 ou palpite>50){
         escreva("Número informado inválido, tente um número inteiro entre 1 e 50 \n")
-        i--
+       i--
 
       }
        
@@ -42,7 +42,7 @@ programa {
       caso 2 : escreva("Você acertou na segunda tentativa! Fez 40 pontos\n Parabéns, você foi ótimo!") pare
       caso 3 : escreva("Você acertou na terceira tentativa! Fez 30 pontos\n Boa tentativa, quase lá!") pare
       caso 4 : escreva("Você acertou na quarta tentativa! Fez 20 pontos\n Boa tentativa, quase lá!") pare
-      caso 5 : escreva("Você acertou na quinta tentativa e ultima tentativa! Fez 10 pontos\n Boa tentativa, quase lá!") pare
+      caso 5 : escreva("Você acertou na quinta e ultima tentativa! Fez 10 pontos\n Boa tentativa, quase lá!") pare
       caso contrario: escreva("Não foi dessa vez, tente novamente!")
     }
 
