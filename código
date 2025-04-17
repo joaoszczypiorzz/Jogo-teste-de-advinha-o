@@ -31,7 +31,7 @@ programa {
       }
       senao se(palpite<1 ou palpite>50){
         escreva("Número informado inválido, tente um número inteiro entre 1 e 50 \n")
-       i--
+        i--
 
       }
        
